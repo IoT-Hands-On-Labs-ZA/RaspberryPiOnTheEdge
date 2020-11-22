@@ -1,0 +1,54 @@
+{
+  "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:timeCreated:1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "timeCreated "
+      },
+      "name": "timeCreated",
+      "schema": "dateTime"
+    },
+    {
+      "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:ambient:1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "ambient"
+      },
+      "name": "ambient",
+      "schema": {
+        "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:ambient:schema:1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:ambient:schema:temperature:1",
+            "displayName": {
+              "en": "temperature"
+            },
+            "name": "temperature",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:iotEdgeDemo:IoTEdgeARMEnvironmentMonitor6sb:ambient:schema:humidity:1",
+            "displayName": {
+              "en": "humidity"
+            },
+            "name": "humidity",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ],
+  "displayName": {
+    "en": "Interface"
+  },
+  "@context": [
+    "http://azureiot.com/v1/contexts/IoTModel.json"
+  ]
+}
